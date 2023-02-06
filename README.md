@@ -3,7 +3,7 @@
 
 ## Overview
 Github Api has been used to show the ssl pinning. Its a simple user info api which will show user name.After clicking the button github api will be called and 
-it will fectch user data.
+it will fetch user data.
 
 
 ![Alt text](https://github.com/rafi4204/SSL-Pinning-Android/blob/master/image/Screenshot_20230206_233429.png "CertificatePinner")
@@ -32,3 +32,6 @@ it will fectch user data.
 - Hit github api then in logcat correct hash pin will be shown. Copy the first hash and use it for pinning
 
 ![Alt text](https://github.com/rafi4204/SSL-Pinning-Android/blob/master/image/Screenshot%202023-02-06%20at%2011.35.56%20PM.png "Logcat")
+
+ ### 3rd Appraoch
+- Run this command `openssl s_client -connect www.yourdomain.com:443 | openssl x509 -pubkey -noout | openssl rsa -pubin -outform der | openssl dgst -sha256 -binary | openssl enc -base64`
