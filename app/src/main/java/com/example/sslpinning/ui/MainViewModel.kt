@@ -14,7 +14,7 @@ class MainViewModel : ViewModel() {
     fun getUser() {
         viewModelScope.launch(Dispatchers.IO) {
             try {
-                api.getUserData("rafi").apply {
+                api.getUserData("rafi4204").apply {
                     this.body()?.let { user.emit(it) }
                 }
             } catch (e: Exception) {
