@@ -42,3 +42,8 @@ it will fetch user data.
 
  ### 3rd Appraoch
 - Run this command `openssl s_client -connect www.yourdomain.com:443 | openssl x509 -pubkey -noout | openssl rsa -pubin -outform der | openssl dgst -sha256 -binary | openssl enc -base64`
+
+## Resources 
+https://tech.groww.in/ssl-pinning-in-android-part-2-b591dfc8c2f1
+https://owasp.org/www-community/controls/Certificate_and_Public_Key_Pinning
+https://mailapurvpandey.medium.com/ssl-pinning-in-android-90dddfa3e051#:~:text=Public%20Key%20Pinning,-Public%20key%20pinning&text=In%20this%20approach%2C%20we%20generate,throw%20a%20SSL%20certificate%20error.
