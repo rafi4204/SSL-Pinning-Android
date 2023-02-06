@@ -20,6 +20,13 @@ it will fetch user data.
  ### Add `OkHttpClient` with `Retrofit`
  
  ![Alt text](https://github.com/rafi4204/SSL-Pinning-Android/blob/master/image/Screenshot%202023-02-06%20at%2011.52.05%20PM.png "CertificatePinner")
+ 
+## Install Openssl 
+ ### Mac OS
+- Run this command on terminal `brew install openssl`
+ 
+ ### Windows
+ https://thesecmaster.com/procedure-to-install-openssl-on-the-windows-platform/
    
 ## How to Extract Public Key/Hash from .cer/.crt file
  ### 1st Approach
